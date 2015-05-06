@@ -9,5 +9,5 @@ class QOTD(models.Model):
     class Meta:
         verbose_name_plural = "Quotes"
 
-    def __unicode__(self):
+    def __str__(self):
         return "{}...".format(self.quote[0:30])

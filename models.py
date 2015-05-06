@@ -7,4 +7,4 @@ class QOTD(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return '%s...' % (self.quote[0:30])
+        return "{}...".format(self.quote[0:30])

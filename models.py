@@ -10,4 +10,4 @@ class QOTD(models.Model):
         verbose_name_plural = "Quotes"
 
     def __str__(self):
-        return "{}...".format(self.quote[0:30])
+        return self.quote[0:30]
